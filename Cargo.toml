@@ -1,0 +1,13 @@
+[package]
+name = "nesty"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mio = { version = "1", features = ["os-poll", "net"] }
+crossbeam-deque = "0.8"
+crossbeam-utils = "0.8"
+dashmap = "6"
+
+[profile.release]
+debug = true
